@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Alert } from 'react-bootstrap';
 
 export default function Home() {
   return (
@@ -11,7 +13,10 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className={styles.main}>shahj</main>
+      <main className={styles.main}>
+        Test
+        <Alert>this is a test</Alert>
+      </main>
 
       <footer className={styles.footer}>
         <a
