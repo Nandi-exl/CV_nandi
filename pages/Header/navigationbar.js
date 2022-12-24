@@ -1,45 +1,39 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 function NavigationBar() {
-  const [textCenter, setTextCenter] = useState('');
   const [marginNavTex, setMarginNavTex] = useState('');
+
+  const router = useRouter();
+
   useEffect(() => {
     if (window.innerWidth > 1000) {
-      setTextCenter('text-center');
       setMarginNavTex('2rem');
     } else {
-      setTextCenter('');
-      setMarginNavTex('0');
+      setMarginNavTex('0rem');
     }
   }, []);
+
   return (
     <>
       <Navbar expand='lg' style={{ backgroundColor: 'rgba(0, 0, 0, 0)' }}>
         <Container style={{ paddingLeft: '0', paddingRight: '0' }}>
           <Navbar.Brand href='#home'>LOGO</Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
-          <Navbar.Collapse id='basic-navbar-nav' className={textCenter}>
+          <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto ' style={{ marginLeft: marginNavTex }}>
-              <Nav.Link href='#home'>Home</Nav.Link>
-              <Nav.Link href='#link'>Link</Nav.Link>
-
-              <NavDropdown title='Dropdown' id='basic-nav-dropdown'>
-                <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>
-                <NavDropdown.Item href='#action/3.2'>
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href='#action/3.3'>
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href='#action/3.4'>
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Link href='/'>Home</Nav.Link>
+              <Nav.Link href='#about'>About</Nav.Link>
+              <Nav.Link href='#solution'>Solution</Nav.Link>
+              <Nav.Link href='#promotion'>Promotion</Nav.Link>
+              <Nav.Link href='#news'>News</Nav.Link>
+              <Nav.Link href='#recipe'>Recipe</Nav.Link>
+              <Nav.Link href='#contact_us'>Contact Us</Nav.Link>
+              <Nav.Link href='./component/about'>Online Shop</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
