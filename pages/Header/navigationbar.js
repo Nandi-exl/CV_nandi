@@ -27,13 +27,13 @@ function NavigationBar() {
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto ' style={{ marginLeft: marginNavTex }}>
               <Nav.Link href='/'>Home</Nav.Link>
-              <Nav.Link href='#about'>About</Nav.Link>
-              <Nav.Link href='#solution'>Solution</Nav.Link>
-              <Nav.Link href='#promotion'>Promotion</Nav.Link>
-              <Nav.Link href='#news'>News</Nav.Link>
-              <Nav.Link href='#recipe'>Recipe</Nav.Link>
-              <Nav.Link href='#contact_us'>Contact Us</Nav.Link>
-              <Nav.Link href='./component/about'>Online Shop</Nav.Link>
+              <Nav.Link href='/component/about'>About</Nav.Link>
+              <Nav.Link href='/component/solution'>Solution</Nav.Link>
+              <Nav.Link href='/component/promotion'>Promotion</Nav.Link>
+              <Nav.Link href='/component/news'>News</Nav.Link>
+              <Nav.Link href='/component/recipe'>Recipe</Nav.Link>
+              <Nav.Link href='/component/contact'>Contact Us</Nav.Link>
+              <Nav.Link href='/component/online_shop'>Online Shop</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -6,8 +6,6 @@ export default function Home() {
       <main>
         <HomeContent />
       </main>
-
-      {/* this is start of static footer */}
     </>
   );
 }
