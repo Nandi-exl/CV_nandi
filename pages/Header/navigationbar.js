@@ -21,7 +21,7 @@ function NavigationBar() {
   return (
     <>
       <Navbar expand='lg' style={{ backgroundColor: 'rgba(0, 0, 0, 0)' }}>
-        <Container style={{ paddingLeft: '0', paddingRight: '0' }}>
+        <Container style={{ paddingLeft: '1rem', paddingRight: '0' }}>
           <Navbar.Brand href='#home'>LOGO</Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>

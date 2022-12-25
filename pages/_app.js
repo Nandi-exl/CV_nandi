@@ -1,4 +1,4 @@
-import '../styles/globals.css';
+// import '../styles/globals.css';
 import { SSRProvider } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavigationBar from './Header/navigationbar';
@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
           <link rel='icon' href='/vercel.svg' />
         </Head>
         <NavigationBar />
-        <main className={styles.main}>
+        <main>
           <Component {...pageProps} />
         </main>
 
